@@ -68,7 +68,7 @@
         addMessage("Você", pergunta);
 
         try {
-          const resposta = await fetch("https://hook.jesue.site/webhook/agendan8n", {
+          const resposta = await fetch("https://editor.jesue.site/webhook-test/agendan8n", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ pergunta: pergunta, sessionId: "sessao001" })

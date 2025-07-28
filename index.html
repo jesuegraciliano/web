@@ -62,16 +62,16 @@
       }
 
       async function sendMessage() {
-        const pergunta = userInput.value.trim();
-        if (!pergunta) return;
+        const message = userInput.value.trim();
+        if (!message) return;
 
-        addMessage("Você", pergunta);
+        addMessage("Você", message);
 
         try {
           const resposta = await fetch("https://hook.jesue.site/webhook/teste28dejulho", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ pergunta: pergunta, sessionId: "sessao001" })
+            body: JSON.stringify({ message: message, sessionId: "sessao001" })
           });
 
           const json = await resposta.json();

@@ -90,7 +90,7 @@
 
       try {
         // AQUI ESTÁ A CORREÇÃO PRINCIPAL: O URL DO WEBHOOK FOI AJUSTADO
-        const resposta = await fetch("https://editor.jesue.site/webhook-test/agendan8n", {
+        const resposta = await fetch("https://hook.jesue.site/webhook/teste28dejulho", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"

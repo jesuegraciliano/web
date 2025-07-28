@@ -68,7 +68,7 @@
         addMessage("Você", message);
 
         try {
-          const resposta = await fetch("https://hook.jesue.site/webhook/teste28dejulho", {
+          const resposta = await fetch("https://hook.jesue.site/webhook/6f0794d9-a0e2-4cba-8400-f0adee7cacea/chat", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ message: message, sessionId: "sessao001" })
